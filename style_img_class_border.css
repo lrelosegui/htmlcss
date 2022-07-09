@@ -1,0 +1,21 @@
+/* https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors */
+/* img {
+  width: 200px;
+} */
+
+.imagen-de-gatos {
+  width: 200px;
+  /* bordes */
+  border-width: 5px;
+  border-color: blue;
+  /* ver más opciones en MDN References*/
+  
+  border-style: solid; /* aplica este estilo a todos los bordes*/
+  border-style: solid dotted; /* solid:arriba y abajo; dotted: izquierda y derecha */
+  border-style: solid dashed dotted; /* solid:arriba; dashed: izquierda y derecha; dotted: abajo */
+  border-style: solid dashed dotted double; /* Se asignan en el orden de las agujas del reloj */
+
+  /* bordes redondeados */
+  /*border-radius: 20px;*/ /* en píxeles */
+  border-radius: 50%; /* en porcentaje. 50% es un círculo u óvalo */
+}

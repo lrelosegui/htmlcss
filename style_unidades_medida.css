@@ -1,0 +1,34 @@
+#contenedor-principal {
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+  padding: 5px;
+  margin: 5px;
+}
+
+.px {
+  background-color: crimson;
+  width: 200px;
+}
+
+.vw {
+  background-color: darkmagenta;
+  /* 20vw representa el 20% del ancho de la ventana del navegador */
+  width: 20vw; 
+}
+
+.em {
+  background-color: green;
+  /* em: relativa al tamaño de la fuente de ese contenedor */
+  
+  /* aumentamos el tamaño de la letra del contenedor principal y aumenta el tamaño de este rectángulo */
+  width: 15em;
+  
+  /* El tamño de la letra será 1.5 veces el tamaño de la letra de su contenedor */
+  font-size:1.5em;
+}
