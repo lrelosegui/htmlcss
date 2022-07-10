@@ -1,0 +1,60 @@
+/* ------- ESTILOS INCOMPATIBLES DE CLASES -------------- */
+/* Los estilos se aplican en el orden en que figuran en el fichero */
+/* En caso de que existan dos clases incompatibles, se aplicará la que figure en última posición en este fichero */
+.texto-morado {
+  color: purple;
+}
+
+.texto-azul {
+  color: blue;
+}
+/* ------- SELECTOR DE CLASE vs. SELECTOR DE TIPO -------------- */
+
+/* El estilo asignado a una clase prevalece sobre el asignado a los elementos de un mismo tipo */
+/* Selector de clase */
+.sin-subrayado {
+  text-decoration: none;
+}
+
+/* Selector de tipo */
+a {
+  text-decoration: purple wavy underline;
+}
+
+/* ------- SELECTOR DE CLASE vs. SELECTOR DE ID -------------- */
+/* Id más prioridad que clase */
+#titulo {
+  color: purple;
+}
+
+.texto-azul {
+  color: blue;
+}
+
+/* ------- SELECTOR DE TIPO vs. SELECTOR DE CLASE vs. SELECTOR DE ID -------------- */
+#enlace-principal {
+  color: green;
+  text-decoration: green wavy underline;
+}
+
+.sin-subrayado {
+  text-decoration: none;
+  color: blue;
+}
+
+a {
+  text-decoration: purple wavy underline;
+}
+
+/* ------- ESTILO EN LÍNEA vs. SELECTOR DE CLASE vs. SELECTOR DE ID -------------- */
+/* El estilo en línea se prioriza sobre los ids y las clases */
+/* Para evitar este comportamiento y forzar que se aplique un estilo de selector de clase o de id, hay que poner !important */
+
+#titulo {
+  color: purple;
+}
+
+.texto-azul {
+  color: blue !important;
+}
+/* CONCLUSIÓN: A más específico, más prioridad: tipo -> clase -> id */

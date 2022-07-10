@@ -1,0 +1,5 @@
+/* Aplica a todos los elementos de la página ya que es el elemento raíz de todo */
+body {
+  background-color: silver;
+  color: chocolate;
+}
